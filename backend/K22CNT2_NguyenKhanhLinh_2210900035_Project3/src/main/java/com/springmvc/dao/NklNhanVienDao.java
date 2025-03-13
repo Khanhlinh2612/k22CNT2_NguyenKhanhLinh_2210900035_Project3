@@ -37,9 +37,10 @@ public class NklNhanVienDao {
     // ✅ Cập nhật nhân viên
     public int update(NklNhanVien nv) {
         String sql = "UPDATE nkl_nhanvien SET nkl_TenNV=?, nkl_ChucVu=?, nkl_SDT=?, nkl_Email=?, nkl_NgayVaoLam=? WHERE nkl_IdNV=?";
-        String chucVu = (nv.getNklChucVu() != null) ? nv.getNklChucVu().name() : NklChucVu.NHAN_VIEN.name();
+        String chucVu = (nv.getNklChucVu() != null) ? nv.getNklChucVu().getValue() : NklChucVu.NHAN_VIEN.getValue();
         return template.update(sql, nv.getNklTenNV(), chucVu, nv.getNklSDT(), nv.getNklEmail(), nv.getNklNgayVaoLam(), nv.getNklIdNV());
     }
+
 
     // ✅ Xóa nhân viên
     public int delete(int nklIdNV) {

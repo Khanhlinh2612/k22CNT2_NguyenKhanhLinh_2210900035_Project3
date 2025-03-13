@@ -10,11 +10,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+        }
+
+        /* Header */
+        .header {
+            background: #1e272e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffc107;
         }
 
         .content {
@@ -25,6 +53,36 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+
+        .dashboard-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-box i {
+            font-size: 40px;
+            color: #ff4757;
+        }
+
+        .stat-box h3 {
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+        .stat-box p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
@@ -43,7 +101,7 @@
 
     <div class="content">
         <h2 class="dashboard-title">Danh Sách Sản Phẩm</h2>
-        <a href="/nklsanpham/nklform" class="btn btn-success mb-3"><i class="fas fa-plus"></i> Thêm Sản Phẩm</a>
+        <a href="/SpringMVCPagination/nklsanpham/nklform" class="btn btn-success mb-3"><i class="fas fa-plus"></i> Thêm Sản Phẩm</a>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
                 <tr>
@@ -62,12 +120,11 @@
                         <td>${sp.nklMaSP}</td>
                         <td>${sp.nklTenSP}</td>
                         <td>${sp.nklTenLoai}</td>
-                        <td>${sp.nklDonViTinh}</td>
                         <td>${sp.nklGiaNhap}</td>
                         <td>${sp.nklSoLuongTon}</td>
                         <td>
-                            <a href="/nklsanpham/nkledit/${sp.nklMaSP}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
-                            <a href="/nklsanpham/nkldelete/${sp.nklMaSP}" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">
+                            <a href="/SpringMVCPagination/nklsanpham/nkledit/${sp.nklMaSP}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Sửa</a>
+                            <a href="/SpringMVCPagination/nklsanpham/nkldelete/${sp.nklMaSP}" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">
                                 <i class="fas fa-trash"></i> Xóa
                             </a>
                         </td>

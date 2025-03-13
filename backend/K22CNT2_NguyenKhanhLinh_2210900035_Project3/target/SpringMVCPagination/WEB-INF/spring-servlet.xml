@@ -33,4 +33,12 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd" >
 	    <property name="template" ref="jt"></property>
 	</bean>
 	
+	<bean id="nhaCungCapDao" class="com.springmvc.dao.NklNhaCungCapDao">
+	    <property name="template" ref="jt"></property>
+	</bean>
+	
+	<bean id="nhanVienDao" class="com.springmvc.dao.NklNhanVienDao">
+	    <property name="template" ref="jt"></property>
+	</bean>
+	
 </beans>

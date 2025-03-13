@@ -135,7 +135,7 @@
             <div class="col-md-4 mb-3">
                 <a href="/SpringMVCPagination/nklnhanvien/nklview">
                     <div class="stat-box">
-                        <i class="fas fa-import"></i>
+                        <i class="fas fa-file-import"></i>
                         <h3 class="text-dark">Quản Lý Nhập Kho</h3>
                         <p class="text-muted">${totalNhapKho}</p>
                     </div>

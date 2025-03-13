@@ -59,11 +59,12 @@ public class NklNhanVienController {
     // ✅ Lưu chỉnh sửa nhân viên
     @PostMapping("/nkleditsave")
     public String editSave(@ModelAttribute("command") NklNhanVien nklNhanVien) {
-        System.out.println("🔍 Dữ liệu nhận được: " + nklNhanVien.getNklTenNV() + ", " + nklNhanVien.getNklChucVu());
-
-        if (nklNhanVien.getNklChucVu() == null) {
-            nklNhanVien.setNklChucVu(NklChucVu.NHAN_VIEN);
-        }
+        System.out.println("🔍 Dữ liệu nhận được từ form:");
+        System.out.println("Tên NV: " + nklNhanVien.getNklTenNV());
+        System.out.println("Chức vụ: " + nklNhanVien.getNklChucVu().getValue()); // Kiểm tra dữ liệu nklChucVu
+        System.out.println("Số ĐT: " + nklNhanVien.getNklSDT());
+        System.out.println("Email: " + nklNhanVien.getNklEmail());
+        System.out.println("Ngày vào làm: " + nklNhanVien.getNklNgayVaoLam());
 
         dao.update(nklNhanVien);
         return "redirect:/nklnhanvien/nklview";

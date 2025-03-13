@@ -1,6 +1,13 @@
 D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\beans\NklLoaiSanPham.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\beans\NklNhaCungCap.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\beans\NklNhanVien.java
 D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\beans\NklSanPham.java
 D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\controllers\NklMenuController.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\controllers\NklNhaCungCapController.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\controllers\NklNhanVienController.java
 D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\controllers\NklSanPhamController.java
 D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\dao\NklLoaiSanPhamDao.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\dao\NklNhaCungCapDao.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\dao\NklNhanVienDao.java
 D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\dao\NklSanPhamDao.java
+D:\java web\Bai tap\K22CNT2_NguyenKhanhLinh_2210900035_Project3\src\main\java\com\springmvc\enums\NklChucVu.java

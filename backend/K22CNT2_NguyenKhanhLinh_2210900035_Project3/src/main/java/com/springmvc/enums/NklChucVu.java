@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum NklChucVu {
-    NHAN_VIEN("Nhân viên"),
-    QUAN_LY("Quản lý");
+    NHAN_VIEN("Nhan vien"), // ✅ Sửa lại đúng với ENUM trong database (không dấu)
+    QUAN_LY("Quan ly");
 
     private final String value;
     private static final Map<String, NklChucVu> lookup = new HashMap<>();
