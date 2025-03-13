@@ -1,0 +1,117 @@
+/* Đảm bảo giao diện đồng nhất với index-nkl.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f7cac9, #dec7f7);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #d291bc, #957dad);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+nav {
+    background: linear-gradient(90deg, #ffcccb, #ffb6c1);
+    padding: 15px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8fab, #ff758c);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #957dad, #d291bc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: linear-gradient(135deg, #f7cac9, #ffb6c1);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 105, 135, 0.3);
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.product-card img:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: linear-gradient(90deg, #d291bc, #957dad);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+}
